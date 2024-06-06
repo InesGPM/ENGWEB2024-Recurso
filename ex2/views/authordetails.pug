@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1 Author Pag
+  h2 Author Details
+  p Name: #{author.name}
+  p Bio: #{author.bio}
+  h2 Books by #{author.name}
+  ul
+    each book in author.books
+      li #{book.title}
+  p Total Nº of Books: #{author.books.length}

@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Book Detail Page
+  img(src=`/images/${book.image}`, alt="Book Cover")
+  p ID: #{book.id}
+  p Title: #{book.title}
+  p Author: #{book.author}
+  p Description: #{book.description}

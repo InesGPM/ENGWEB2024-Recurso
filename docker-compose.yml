@@ -1,0 +1,21 @@
+services:
+  ex1:
+    build:
+      context: ./ex1
+    ports:
+      - "17000:17000"
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
+    depends_on:
+      - seed
+  
+  seed:
+    image: mongo
+    volumes:
+      - ./data/processed_books.json:/processed_books.json
+    command: mongoimport --host mongodb -d livros -c livros --type json --file processed_books.json --jsonArray

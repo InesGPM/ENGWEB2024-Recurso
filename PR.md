@@ -1,5 +1,5 @@
 # 1.1 Setup
-Primeiramente, foi necessário preparar os dados. Ao analisar o ficheiro dataset.json, percebi que continha alguns erros. Em primeiro lugar, faltava o delimitador para fechar o JSON, que adicionei manualmente. Depois, reparei que certos arrays estavam como strings, para corrigir isso, utilizei o script prepare.py para os transformar. Aproveitei este script para substituir o uso de bookId por _id na base de dados.
+Primeiramente, foi necessário preparar os dados. Ao analisar o ficheiro dataset.json, percebi que continha alguns erros. Em primeiro lugar, faltava o delimitador para fechar o JSON, que adicionei manualmente. Depois, reparei que certos arrays estavam como strings, que depois foi corriguido. Aproveitei este script para substituir o uso de bookId por _id na base de dados.
 
 # 1.2 Queries
 
